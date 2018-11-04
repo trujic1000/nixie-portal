@@ -4,7 +4,8 @@
   "description": "\u001b[2;3~A portal for clients to log in to in order to check up on the status of their project with us.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
   },
   "author": "Nixie Tech",
   "license": "ISC",
