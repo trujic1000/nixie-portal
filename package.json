@@ -1,0 +1,19 @@
+{
+  "name": "nixie-portal",
+  "version": "1.0.0",
+  "description": "\u001b[2;3~A portal for clients to log in to in order to check up on the status of their project with us.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nixie Tech",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.9",
+    "morgan": "^1.9.1",
+    "validator": "^10.8.0"
+  }
+}
