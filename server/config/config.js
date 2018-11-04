@@ -1,8 +1,8 @@
 const devConfig = {
-  MONGODB_URI: 'mongodb://localhost:27017/nixie-portal'
+  MONGODB_URI: 'mongodb://dev:admin1@ds151863.mlab.com:51863/portaldb' // yamanziadeh1 = account name
 }
 const testConfig = {
-  MONGODB_URI: 'mongodb://localhost:27017/nixie-portal-test'
+  MONGODB_URI: 'mongodb://dev:admin1@ds151753.mlab.com:51753/portaldb-test'
 }
 const prodConfig = {
   MONGODB_URI: process.env.MONGODB_URI
