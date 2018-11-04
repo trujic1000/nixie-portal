@@ -11,6 +11,8 @@ const defaultConfig = {
   PORT: process.env.PORT || 3000
 }
 
+const test = 'test';
+
 function envConfig(env) {
   switch(env) {
     case 'development':
