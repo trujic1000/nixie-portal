@@ -7,7 +7,7 @@ async function signup(req, res) {
 
   try {
     const user = await newUser.save();
-    res.status(201).send({user});
+    res.status(201).send(`${user.email} created`);
   } catch (error) {
     res.status(400).send();
   }

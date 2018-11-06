@@ -25,21 +25,22 @@ const UserSchema = mongoose.Schema({
   }
 });
 
-// UserSchema.pre('save', function (next) {
-//   const user = this;
+// HASHING PASSWORD
+UserSchema.pre('save', function (next) {
+  const user = this;
 
-//   // If password is modified, generate salt and hash password
-//   if (user.isModified('password')) {
-//     bcrypt.genSalt(10, (err, salt) => {
-//       bcrypt.hash(user.password, salt, (err, hash) => {
-//         user.password = hash;
-//         next();
-//       });
-//     });
-//   } else {
-//     next();
-//   }
-// });
+  // If password is modified, generate salt and hash password
+  if (user.isModified('password')) {
+    bcrypt.genSalt(10, (err, salt) => {
+      bcrypt.hash(user.password, salt, (err, hash) => {
+        user.password = hash;
+        next();
+      });
+    });
+  } else {
+    next();
+  }
+});
 
 const User = mongoose.model('User', UserSchema);
 
