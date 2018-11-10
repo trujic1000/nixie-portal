@@ -1,5 +1,22 @@
 <%- include partials/header %>
 
-<h1>Index Page</h1>
+
+<section id="Login">
+    <div id="loginForm">
+        <img src="images/logo.svg" alt="">
+        <form action="/login">
+            <input required id="username" type="text" name="username">
+            <label for="username">Username</label>
+            <input required id="password" type="password" name="password">
+            <label for="password">Password</label>
+            <input id="loginSubmit" type="submit" value="Login">
+        </form>
+        <div id="footer">
+            <p><a href="">Help</a></p>
+            <p id="right"><a href="">Privacy</a></p>
+            <p id="right"><a href="">Terms</a></p>
+        </div>
+    </div>
+</section>
 
 <%- include partials/footer %>
